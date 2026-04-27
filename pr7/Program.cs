@@ -11,7 +11,9 @@ namespace ConsoleApp_FirstApp
             IterateThroughList();
             Console.ReadKey();
         }
-
+        /// <summary>
+        /// Выводит в консоль список галактик с названием, расстоянием и типом
+        /// </summary>
         private static void IterateThroughList()
         {
             var theGalaxies = new List<Galaxy>
@@ -38,7 +40,9 @@ namespace ConsoleApp_FirstApp
             //  Maffei 1,  11,  Elliptical
         }
     }
-
+    /// <summary>
+    /// Класс, представляющий галактику
+    /// </summary>
     public class Galaxy
     {
         public string Name { get; set; }
@@ -47,7 +51,9 @@ namespace ConsoleApp_FirstApp
         public GType GalaxyType { get; set; }
 
     }
-
+    /// <summary>
+    /// Класс, определяющий тип галактики по символьному коду
+    /// </summary>
     public class GType
     {
         public GType(char type)
