@@ -2,6 +2,9 @@
 
 class ArrayExample
 {
+    /// <summary>
+    /// Главный метод программы
+    /// </summary>
     static void Main()
     {
         char[] letters = { 'f', 'r', 'e', 'd', ' ', 's', 'm', 'i', 't', 'h' };
@@ -15,7 +18,9 @@ class ArrayExample
         }
         Console.ReadKey();
     }
-
+    /// <summary>
+    /// Выводит приветствие и число
+    /// </summary>
     static void SendMessage(string name, int msg)
     {
         Console.WriteLine("Hello, " + name + "! Count to " + msg);
